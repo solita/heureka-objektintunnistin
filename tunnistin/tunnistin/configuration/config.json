@@ -1,0 +1,631 @@
+{
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "displayLanguages": [
+    "fi",
+    "en"
+  ],
+  "modelId": 2,
+  "confidenceThreshold": 0.65,
+  "zoomFactor": 1,
+  "requiredIntersection": 0.9,
+  "borderWidth": 4.0,
+  "cornerRadius": 0.0,
+  "objectTimerLength": 2.0,
+  "objectTimerType": "pie",
+  "resultsViewWidth": 0.14,
+  "motionSensorPause": 3.0,
+  "objectColor": "#D20F41",
+  "objectTextColor": "#FFF9EF",
+  "fontName": "SF Pro",
+  "awardGifHeight": 150,
+  "awardGifDuration": 3.0,
+  "awardDisplayTime": 8.0,
+  "pauseImageHeight": 0,
+  "idleDetectionCycles": 100,
+  "motionDetectionThreshold": 0.015,
+  "showMotionValues": false,
+  "screenColor": "#D20F41",
+  "targetObjects": [
+    "cell phone",
+    "handbag",
+    "toothbrush",
+    "cup",
+    "book"
+  ],
+  "uiTexts": [
+    {
+      "textId": "text_init",
+      "localisations": [
+        "Initializing...",
+        "Valmistellaan..."
+      ]
+    },
+    {
+      "textId": "text_idle",
+      "localisations": [
+        "Hi! Lift me up",
+        "Moi! Nosta minut"
+      ]
+    },
+    {
+      "textId": "text_success",
+      "localisations": [
+        "Great!",
+        "Hienoa!"
+      ]
+    },
+    {
+      "textId": "text_found_items",
+      "localisations": [
+        "You found all the items, Bon voyage!",
+        "Sait kaikki tavarat kerättyä, Bon voyage!"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "classification": "person",
+      "localisations": [
+        "person",
+        "henkilö"
+      ],
+      "color": "#800000"
+    },
+    {
+      "classification": "bicycle",
+      "localisations": [
+        "bicycle",
+        "polkupyörä"
+      ]
+    },
+    {
+      "classification": "car",
+      "localisations": [
+        "car",
+        "auto"
+      ]
+    },
+    {
+      "classification": "motorcycle",
+      "localisations": [
+        "motorcycle",
+        "moottoripyörä"
+      ]
+    },
+    {
+      "classification": "airplane",
+      "localisations": [
+        "airplane",
+        "lentokone"
+      ]
+    },
+    {
+      "classification": "bus",
+      "localisations": [
+        "bus",
+        "bussi"
+      ]
+    },
+    {
+      "classification": "train",
+      "localisations": [
+        "train",
+        "juna"
+      ]
+    },
+    {
+      "classification": "truck",
+      "localisations": [
+        "truck",
+        "kuorma-auto"
+      ]
+    },
+    {
+      "classification": "boat",
+      "localisations": [
+        "boat",
+        "laiva"
+      ]
+    },
+    {
+      "classification": "traffic light",
+      "localisations": [
+        "traffic light",
+        "liikennevalo"
+      ]
+    },
+    {
+      "classification": "fire hydrant",
+      "localisations": [
+        "fire hydrant",
+        "paloposti"
+      ]
+    },
+    {
+      "classification": "stop sign",
+      "localisations": [
+        "stop sign",
+        "stop-merkki"
+      ]
+    },
+    {
+      "classification": "parking meter",
+      "localisations": [
+        "parking meter",
+        "parkkimittari"
+      ]
+    },
+    {
+      "classification": "bench",
+      "localisations": [
+        "bench",
+        "penkki"
+      ]
+    },
+    {
+      "classification": "bird",
+      "localisations": [
+        "bird",
+        "lintu"
+      ]
+    },
+    {
+      "classification": "cat",
+      "localisations": [
+        "cat",
+        "kissa"
+      ]
+    },
+    {
+      "classification": "dog",
+      "localisations": [
+        "dog",
+        "koira"
+      ]
+    },
+    {
+      "classification": "horse",
+      "localisations": [
+        "horse",
+        "hevonen"
+      ]
+    },
+    {
+      "classification": "sheep",
+      "localisations": [
+        "sheep",
+        "lammas"
+      ]
+    },
+    {
+      "classification": "cow",
+      "localisations": [
+        "cow",
+        "lehmä"
+      ]
+    },
+    {
+      "classification": "elephant",
+      "localisations": [
+        "elephant",
+        "elefantti"
+      ]
+    },
+    {
+      "classification": "bear",
+      "localisations": [
+        "bear",
+        "karhu"
+      ]
+    },
+    {
+      "classification": "zebra",
+      "localisations": [
+        "zebra",
+        "seepra"
+      ]
+    },
+    {
+      "classification": "giraffe",
+      "localisations": [
+        "giraffe",
+        "kirahvi"
+      ]
+    },
+    {
+      "classification": "backpack",
+      "localisations": [
+        "backpack",
+        "reppu"
+      ]
+    },
+    {
+      "classification": "umbrella",
+      "localisations": [
+        "umbrella",
+        "sateenvarjo"
+      ]
+    },
+    {
+      "classification": "handbag",
+      "localisations": [
+        "handbag",
+        "käsilaukku"
+      ]
+    },
+    {
+      "classification": "tie",
+      "localisations": [
+        "tie",
+        "solmio"
+      ]
+    },
+    {
+      "classification": "suitcase",
+      "localisations": [
+        "suitcase",
+        "matkalaukku"
+      ]
+    },
+    {
+      "classification": "frisbee",
+      "localisations": [
+        "frisbee",
+        "frisbee"
+      ]
+    },
+    {
+      "classification": "skis",
+      "localisations": [
+        "skis",
+        "sukset"
+      ]
+    },
+    {
+      "classification": "snowboard",
+      "localisations": [
+        "snowboard",
+        "lumilauta"
+      ]
+    },
+    {
+      "classification": "sports ball",
+      "localisations": [
+        "sports ball",
+        "pallo"
+      ]
+    },
+    {
+      "classification": "kite",
+      "localisations": [
+        "kite",
+        "leija"
+      ]
+    },
+    {
+      "classification": "baseball bat",
+      "localisations": [
+        "baseball bat",
+        "pesäpallomaila"
+      ]
+    },
+    {
+      "classification": "baseball glove",
+      "localisations": [
+        "baseball glove",
+        "pesäpalloräpylä"
+      ]
+    },
+    {
+      "classification": "skateboard",
+      "localisations": [
+        "skateboard",
+        "rullalauta"
+      ]
+    },
+    {
+      "classification": "surfboard",
+      "localisations": [
+        "surfboard",
+        "surffilauta"
+      ]
+    },
+    {
+      "classification": "tennis racket",
+      "localisations": [
+        "tennis racket",
+        "tennismaila"
+      ]
+    },
+    {
+      "classification": "bottle",
+      "localisations": [
+        "bottle",
+        "pullo"
+      ]
+    },
+    {
+      "classification": "wine glass",
+      "localisations": [
+        "wine glass",
+        "viinilasi"
+      ]
+    },
+    {
+      "classification": "cup",
+      "localisations": [
+        "cup",
+        "kuppi"
+      ]
+    },
+    {
+      "classification": "fork",
+      "localisations": [
+        "fork",
+        "haarukka"
+      ]
+    },
+    {
+      "classification": "knife",
+      "localisations": [
+        "knife",
+        "veitsi"
+      ]
+    },
+    {
+      "classification": "spoon",
+      "localisations": [
+        "spoon",
+        "lusikka"
+      ]
+    },
+    {
+      "classification": "bowl",
+      "localisations": [
+        "bowl",
+        "kulho"
+      ]
+    },
+    {
+      "classification": "banana",
+      "localisations": [
+        "banana",
+        "banaani"
+      ]
+    },
+    {
+      "classification": "apple",
+      "localisations": [
+        "apple",
+        "omena"
+      ]
+    },
+    {
+      "classification": "sandwich",
+      "localisations": [
+        "sandwich",
+        "voileipä"
+      ]
+    },
+    {
+      "classification": "orange",
+      "localisations": [
+        "orange",
+        "appelsiini"
+      ]
+    },
+    {
+      "classification": "broccoli",
+      "localisations": [
+        "broccoli",
+        "parsakaali"
+      ]
+    },
+    {
+      "classification": "carrot",
+      "localisations": [
+        "carrot",
+        "porkkana"
+      ]
+    },
+    {
+      "classification": "hot dog",
+      "localisations": [
+        "hot dog",
+        "hot dog"
+      ]
+    },
+    {
+      "classification": "pizza",
+      "localisations": [
+        "pizza",
+        "pizza"
+      ]
+    },
+    {
+      "classification": "donut",
+      "localisations": [
+        "donut",
+        "donitsi"
+      ]
+    },
+    {
+      "classification": "cake",
+      "localisations": [
+        "cake",
+        "kakku"
+      ]
+    },
+    {
+      "classification": "chair",
+      "localisations": [
+        "chair",
+        "tuoli"
+      ]
+    },
+    {
+      "classification": "couch",
+      "localisations": [
+        "couch",
+        "sohva"
+      ]
+    },
+    {
+      "classification": "potted plant",
+      "localisations": [
+        "potted plant",
+        "ruukkukasvi"
+      ]
+    },
+    {
+      "classification": "bed",
+      "localisations": [
+        "bed",
+        "sänky"
+      ]
+    },
+    {
+      "classification": "dining table",
+      "localisations": [
+        "dining table",
+        "ruokapöytä"
+      ]
+    },
+    {
+      "classification": "toilet",
+      "localisations": [
+        "toilet",
+        "wc-istuin"
+      ]
+    },
+    {
+      "classification": "tv",
+      "localisations": [
+        "tv",
+        "televisio"
+      ]
+    },
+    {
+      "classification": "laptop",
+      "localisations": [
+        "laptop",
+        "kannettava tietokone"
+      ]
+    },
+    {
+      "classification": "mouse",
+      "localisations": [
+        "mouse",
+        "hiiri"
+      ]
+    },
+    {
+      "classification": "remote",
+      "localisations": [
+        "remote",
+        "kaukosäädin"
+      ]
+    },
+    {
+      "classification": "keyboard",
+      "localisations": [
+        "keyboard",
+        "näppäimistö"
+      ]
+    },
+    {
+      "classification": "cell phone",
+      "localisations": [
+        "cell phone",
+        "matkapuhelin"
+      ]
+    },
+    {
+      "classification": "microwave",
+      "localisations": [
+        "microwave",
+        "mikroaaltouuni"
+      ]
+    },
+    {
+      "classification": "oven",
+      "localisations": [
+        "oven",
+        "uuni"
+      ]
+    },
+    {
+      "classification": "toaster",
+      "localisations": [
+        "toaster",
+        "leivänpaahdin"
+      ]
+    },
+    {
+      "classification": "sink",
+      "localisations": [
+        "sink",
+        "allas"
+      ]
+    },
+    {
+      "classification": "refrigerator",
+      "localisations": [
+        "refrigerator",
+        "jääkaappi"
+      ]
+    },
+    {
+      "classification": "book",
+      "localisations": [
+        "book",
+        "kirja"
+      ]
+    },
+    {
+      "classification": "clock",
+      "localisations": [
+        "clock",
+        "kello"
+      ]
+    },
+    {
+      "classification": "vase",
+      "localisations": [
+        "vase",
+        "ruukku"
+      ]
+    },
+    {
+      "classification": "scissors",
+      "localisations": [
+        "scissors",
+        "sakset"
+      ]
+    },
+    {
+      "classification": "teddy bear",
+      "localisations": [
+        "teddy bear",
+        "teddykarhu"
+      ]
+    },
+    {
+      "classification": "hair drier",
+      "localisations": [
+        "hair drier",
+        "hiustenkuivain"
+      ]
+    },
+    {
+      "classification": "toothbrush",
+      "localisations": [
+        "toothbrush",
+        "hammasharja"
+      ]
+    }
+  ]
+}

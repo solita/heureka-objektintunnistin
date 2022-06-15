@@ -1,0 +1,64 @@
+@startuml classes
+allowmixing
+
+skinparam ClassBackgroundColor white
+skinparam RectangleBackgroundColor white
+skinparam PackageBackgroundColor white
+skinparam RectangleBackgroundColor #deefff
+
+package Application #fefefe {
+class AppDelegate
+class SceneDelegate
+class NavigationController 
+class CaptureViewController
+class IdleViewController
+class RecognizerViewController
+class ResultsModel
+class AnnotationBuilder
+class ResultView
+class AwardView
+class ObjectView
+class AppConfig<<singleton>>
+}
+
+package "iOS Platform" #eeeeee {
+package CoreMotion {}
+package AVFoundation {}
+package Combine {}
+package Vision {}
+}
+
+package Third-Party #eeeeee {
+package SPConfetti {
+}
+}
+
+"iOS Platform" -right[hidden]-> Application
+
+AppDelegate -down-> SceneDelegate 
+SceneDelegate -down> NavigationController
+SceneDelegate -left.-> AppConfig : "initialise"
+
+CaptureViewController <|-left- RecognizerViewController
+NavigationController *-up-> IdleViewController
+NavigationController *-down-> RecognizerViewController
+
+RecognizerViewController *-down-> ResultsModel
+RecognizerViewController *-left-> AnnotationBuilder
+RecognizerViewController -.> Vision
+
+CaptureViewController -right.> AVFoundation
+NavigationController -up.> CoreMotion
+
+RecognizerViewController *-down-> AwardView
+RecognizerViewController *-down-> ResultView
+RecognizerViewController -right.-> SPConfetti
+
+ResultsModel -.> Combine
+ResultView *-up-> ObjectView
+
+CoreMotion -[hidden]down-> AVFoundation
+AVFoundation -[hidden]down-> Vision
+Vision -[hidden]down- Combine
+
+@enduml

@@ -1,0 +1,2 @@
+tunnistin/tunnistin/resources/YOLOv3Int8LUT.mlmodel filter=lfs diff=lfs merge=lfs -text
+tunnistin/tunnistin/resources/yolov5x.mlmodel filter=lfs diff=lfs merge=lfs -text
