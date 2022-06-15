@@ -18,7 +18,7 @@ The AI models used in the app are based on [Darknet YOLOv3](https://github.com/p
 
 ## Building
 
-Once you have cloned the repository, you can use either Xcode IDE or the command line tools to build the app. Recommended running environment is the device that the app is designed for (iPad). It is possible to run the app in simulator, but real hardware (iPad) is needed for the live camera feed and recognition features. If you're on a M1 mac, it is possible to run the app also in MacOS (motion sensing features not supported).
+Once you have cloned the repository, you can use either Xcode IDE or the command line tools to build the app. Recommended running environment is the device that the app is designed for (iPad). It is possible to run the app in simulator, but real hardware is needed for the live camera feed and recognition features. If you're on a M1 Mac, it is possible to run the app also in MacOS (motion sensing features not supported).
 
 ## Configuration
 
@@ -62,16 +62,16 @@ Application ships with a default configuration that you can find in the source c
 | `uiText` fields | Format   | Default |  Usage                                                                                                                                                                           |
 | --------------- | -------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `textId`        | string   |         | logical name of the text: "text_init" (initialising screen title), "text_idle" (pause screen title), "text_success" (award view title), "text_found_items" (award view subtitle) |
-| `localisations` | [string] |         | localisations for the text in the order of main field array `localisations`                                                                                                      |
+| `localisations` | [string] |         | localisations for the text in the order of main field array `languages`                                                                                                          |
 
 ### Detected objects configurations
 
-| `object` fields       | Format   | Default |  Usage                                                                             |
-| --------------------- | -------- | ------- | ---------------------------------------------------------------------------------- |
-| `classification`      | string   |         | YOLO object class name. Objects not listed will not show in the app.               |
-| `localisations`       | [string] |         | Localisations for the object name in the order of main field array `localisations` |
-| `color`               | string   |         | Override for main config `objectColor` per object.                                 |
-| `confidenceThreshold` | double   |         | Override for main config `confidenceThreshold` per object.                         |
+| `object` fields       | Format   | Default |  Usage                                                                         |
+| --------------------- | -------- | ------- | ------------------------------------------------------------------------------ |
+| `classification`      | string   |         | YOLO object class name. Objects not listed will not show in the app.           |
+| `localisations`       | [string] |         | Localisations for the object name in the order of main field array `languages` |
+| `color`               | string   |         | Override for main config `objectColor` per object.                             |
+| `confidenceThreshold` | double   |         | Override for main config `confidenceThreshold` per object.                     |
 
 ### Target object images configuration
 
